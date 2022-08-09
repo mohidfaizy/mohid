@@ -1,0 +1,133 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f363e;
+}
+
+a{
+    color: hsl(0, 0%, 90%);
+}
+a:hover{
+    color: #fff;
+}
+
+.wrapper{
+    background: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0,0,0,.25),
+    10px 10px 70px rgba(0,0,0,.25),
+    inset 5px 5px 10px rgba(0,0,0,.5),
+    inset 5px 5px 20px rgba(255,255,255,.2),
+    inset -5px -5px 15px rgba(0,0,0,.8);
+    padding: 50px 30px;
+    color: #fff;
+    border-radius: 15px;
+    width: 450px;
+}
+
+.wrapper p{
+    color: hsl(0, 0%, 90%);
+}
+
+.wrapper .heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper .search{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255,0.7);
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.wrapper .search .search_input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.wrapper .search .search_icon{
+    font-size: 1.2rem;
+}
+
+.wrapper .search .search_cancel{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.wrapper .main{
+    display: none;
+    row-gap: 15px;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-top: 30px;
+}
+
+.wrapper .main::-webkit-scrollbar{
+    width: 8px;
+}
+
+.wrapper .main::-webkit-scrollbar-track{
+    background: #4d4d4d7e;
+    border-radius: 10px;
+    width: 8px;
+}
+
+.wrapper .main::-webkit-scrollbar-thumb{
+    background-color: #6d6d6d;
+    width: 8px;
+    border-radius: 10px;
+}
+
+.wrapper .main::-webkit-scrollbar-thumb:hover{
+    background-color: #555555;
+}
+
+.wrapper .main .main_section{
+    border-left: 5px solid rgb(125, 218, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.wrapper .main .main_word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.wrapper .main .main_word_audio i{
+    cursor: pointer;
+}
+
+.wrapper .main .main_bottom{
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.wrapper .main .txt-info{
+    display: block;
+    color: hsl(0, 0%, 90%);
+}
+
+.wrapper .main .txt-info b{
+    display: inline;
+}

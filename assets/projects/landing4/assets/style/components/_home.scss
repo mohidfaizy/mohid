@@ -1,0 +1,95 @@
+// Home
+.home{
+    position: relative;
+    &__container{
+        row-gap: 4.5rem;
+        position: relative;
+        padding-top: 2rem;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__greeting,
+    &__education{
+        font-size: var(--small-font-size);
+        display: block;
+    }
+    &__greeting{
+        color: var(--title-color);
+        margin-bottom: 0.4rem;
+    }
+    &__education{
+        color: var(--text-color);
+        margin-bottom: 4rem;
+    }
+    &__name{
+        font-size: var(--biggest-font-size);
+    }
+    &__handle{
+        justify-self: center;
+        background: linear-gradient(180deg,
+                    hsla(var(--hue1),var(--sat),var(--lit),1),
+                    hsla(var(--hue1),var(--sat),var(--lit),.2));
+        border-radius: 10rem 10rem 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        .home__image{
+            width: 230px;
+        }
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    &__social,
+    &__scroll{
+        position: absolute;
+        bottom: 4rem;
+    }
+    &__social{
+        display: grid;
+        color: var(--first-color);
+        border-radius: .25rem;
+        row-gap: 0.25rem;
+        &_link{
+            width: max-content;
+            border-radius: 0.25rem;
+            background: var(--container-color); 
+            color: var(--first-color);
+            display: flex;
+            font-size: 1rem;
+            padding: .3rem .25rem;
+            transition: .4s;
+            &:hover{
+                background-color: var(--first-color);
+                color: #fff;
+            }
+        }
+        &::after{
+            content: '';
+            background-color: var(--first-color);
+            width: 2rem;
+            height: .15rem;
+            transform: rotate(90deg) translate(16px,4px);
+        }
+    }
+    &__scroll{
+        right: -1.5rem;
+        color: var(--first-color);
+        display: grid;
+        row-gap: 2.25rem;
+        justify-items: center;
+
+        &_icon{
+            font-size: 1.5rem;
+        }
+        &_name{
+            transform: rotate(-90deg);
+            font-size: var(--small-font-size);
+        }
+    }
+}

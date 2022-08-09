@@ -1,0 +1,14 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 40px;
+    gap: 1rem;
+    &_box{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .about{
+        padding: 10px 0;
+    }
+}

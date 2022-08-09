@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea{
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar{
+    width: .5rem;
+    background: hsla(var(--hue2),10%,20%,0.4);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--first-color);
+    border-radius: .4rem;
+}
+
+body.light-theme{
+    --title-color: hsl(var(--hue2),15%, 15%);
+    --text-color: hsl(var(--hue2), 8%, 25%);
+    --text-color-light: hsl(var(--hue2), 4%, 55%);
+    --body-color: hsl(var(--hue2), 100%, 99%);
+    --container-color: #fff;
+    .btn,
+    .btn__ghost,
+    .home__social::after,
+    .home__social_link,
+    .home__scroll,
+    .footer__title{
+        color: var(--title-color);
+    }
+
+    .nav__menu{
+        background-color: hsla(var(--hue2),32%, 90%, .8);
+        color: var(--text-color);
+    }
+
+    .footer__link{
+        color: var(--text-color);
+    }
+
+    .home__social_link,
+    .about__box,
+    .skills__content,
+    .services__box,
+    .work__card,
+    .testimonial__card,
+    .contact__card{
+        box-shadow: 0 0 16px hsla(var(--hue2),32%, 90%, 1);
+    }
+    .contact__info{
+        margin-top: 1rem;
+    }
+    ::-webkit-scrollbar{
+        width: .5rem;
+        background: hsla(var(--hue2), 32%, 70%,0.8);
+    }
+}

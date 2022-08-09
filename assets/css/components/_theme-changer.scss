@@ -1,0 +1,36 @@
+.theme_change{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    &_icon{
+        padding: 10px;
+        background-color: #FFF;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        transition: background-color .3s;
+        i{
+            position: absolute;
+            font-size: 2rem;
+        }
+        .disabled{
+            display: none;
+        }
+        &:hover{
+            background-color: var(--dark-white-color);
+        }
+    }
+}
+
+// Dark Theme
+body.dark .theme_change{
+    &_icon{
+        background-color: var(--dark-menu-color);
+    }
+}

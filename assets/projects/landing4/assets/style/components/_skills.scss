@@ -1,0 +1,39 @@
+// Skills
+.skills{
+    &__container{
+        row-gap: 2rem;
+    }
+    &__content{
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: var(--container-color);
+    }
+    &__title{
+        font-size: var(--normal-font-size);
+        color: var(--first-color);
+        font-weight: var(--font-medium);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &__box{
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+    &__group{
+        display: grid;
+        gap: 1.5rem;
+    }
+    &__data{
+        display: flex;
+        column-gap: .5rem;
+        &_icon{
+            font-size: 1.5rem;
+            color: var(--first-color);
+        }
+        &_info{
+            line-height: 1.2rem;
+            font-size: var(--tiny-font-size);
+        }
+    }
+}

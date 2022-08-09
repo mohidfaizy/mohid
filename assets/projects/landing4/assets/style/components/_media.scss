@@ -1,0 +1,224 @@
+// Media Quaries
+
+// Small Devices
+@media screen and (max-width: 330px){
+    :root{
+        --biggest-font-size: 1.6rem;
+        --h1-font-size: 1.35rem;
+        --h2-font-size: 1rem;
+        --h3-font-size: .935rem;
+        --normal-font-size: .900rem;
+        --small-font-size: .75rem;
+        --smaller-font-size: .7rem;
+        --tiny-font-size: .687rem;
+    }
+    .home{
+        &__container{
+            row-gap: 3rem;
+        }
+        &__education{
+            margin-bottom: 1.5rem;
+        }
+        &__handle{
+            .home__image{
+                width: 160px;
+            }
+        }
+        &__buttons{
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+    .nav{
+        &__menu{
+            padding: 1rem 1.25rem;
+        }
+    }
+    .btn{
+        padding: .4rem .7rem;
+    }
+    .about{
+        &__info{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .skills{
+        &__box{
+            column-gap: 0.1rem;
+            justify-content: space-between;
+        }
+        &__content{
+            padding: 1.5rem 1rem;
+        }
+    }
+    .services{
+        &__container{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+
+// Medium Devices
+@media screen and (min-width: 576px){
+    .nav__menu{
+        width: 350px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    .about__info{
+        grid-template-columns: repeat(3, 150px);
+        justify-content: center;
+    }
+    .skills{
+        &__container{
+            justify-content: center;
+        }
+        &__box{
+            padding: 2rem 1.5rem;
+        }
+    }
+    .services{
+        &__container{
+            grid-template-columns: repeat(2,200px);
+            justify-content: center;
+        }
+        &__modal_content{
+            width: 500px;
+        }
+        &__modal_title{
+            margin-bottom: 1.5rem;
+        }
+    }
+    .work{
+        &__container{
+            
+            justify-content: center;
+        }
+        &__img{
+            width: 300px;
+        }
+    }
+    .contact{
+        &__info{
+            grid-template-columns: 300px;
+            justify-content: center;
+        }
+        &__form{
+            width: 360px;
+            margin: 1.5rem auto;
+        }
+    }
+}
+
+@media screen and (min-width: 777px) {
+    .work{
+        &__container{
+            grid-template-columns: repeat(2, max-content);
+            justify-content: center;
+        }
+        &__img{
+            width: 300px;
+        }
+    }
+    .contact{
+        &__container{
+            grid-template-columns: repeat(2, max-content);
+            justify-content: center;
+            column-gap: 2rem;
+        }
+    }
+}
+
+// Large Devices
+@media screen and (min-width: 992px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section{
+        padding: 6rem 0 1rem;
+        &__title{
+            margin-bottom: 4rem;
+        }
+    }
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    .home{
+        &__handle{
+            width: 290px;
+            height: 400px;
+            .home__image{
+                width: 250px;
+            }
+        }
+        &__social{
+            &_link{
+                font-size: 1.25rem;
+            }
+            &::after{
+                transform: rotate(90deg) translate(21px,3px);
+
+            }
+        }
+    }
+    .about{
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        &__img{
+            width: 300px;
+        }
+        &__data{
+            text-align: initial;
+        }
+        &__info{
+            justify-content: initial;
+        }
+        &__box{
+            text-align: center;
+        }
+    }
+    .skills{
+        &__container{
+            grid-template-columns: repeat(2, 360px);
+            column-gap: 3rem;
+        }
+    }
+
+    .services{
+        &__container{
+            grid-template-columns: repeat(3, 200px);
+        }
+    }
+
+    .work{
+        &__container{
+            gap: 3rem;
+        }
+        &__filter{
+            margin-bottom: 3rem;
+        }
+    }
+    .testimonial{
+        &__container{
+            width: 800px;
+        }
+    }
+    .contact{
+        &__container{
+            
+            gap: 3rem;
+        }
+    }
+    .footer{
+        &__social{
+            &_links{
+                font-size: var(--h2-font-size);
+            }
+        }
+    }
+}

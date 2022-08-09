@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <div class="loader__con">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <a href="#" id="logo">Logo</a>
+        <ul id="menu">
+            <li><a onclick="headertoggle()" href="#banner">Home</a></li>
+            <li><a onclick="headertoggle()" href="#about">About</a></li>
+            <li><a onclick="headertoggle()" href="#services">Services</a></li>
+            <li><a onclick="headertoggle()" href="#team">Team</a></li>
+            <li><a onclick="headertoggle()" href="#contact">Contact</a></li>
+        </ul>
+        <button id="toggle">
+            <span></span>
+        </button>
+    </header>
+    <!-- Banner -->
+    <section class="sec" id="banner">
+        <h1>Unleash Your <br><span>Creativity</span></h1>
+    </section>
+    <!-- About -->
+    <section class="sec" id="about">
+        <h3>Who <span>We</span> Are?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vero unde ipsum tempora, voluptatum officia,
+            quibusdam nam dolore consequatur ullam, nobis officiis. Beatae, aliquam laborum qui ullam similique quisquam
+            laudantium aspernatur maxime assumenda mollitia perspiciatis officia iure quae numquam perferendis saepe?
+            Itaque facere adipisci reprehenderit dolorem nesciunt architecto cum quibusdam, qui magni minus! Aperiam
+            illum neque incidunt ducimus perspiciatis distinctio nam voluptatum nobis, eaque ratione beatae error
+            nostrum voluptatibus amet debitis quibusdam quos modi vero, aliquam rerum, fugit vel consectetur.
+            Perferendis labore incidunt nostrum ut non beatae, quia rem magnam unde at sunt et iste sint dolorum minus
+            obcaecati. Commodi suscipit quam eum veniam eaque dolores temporibus a nihil aliquid porro totam facilis
+            provident vel fugiat tempore, qui iusto maiores? Perspiciatis distinctio commodi officiis ullam quibusdam
+            aut reiciendis porro error.</p>
+        </section>
+    <!-- Services -->
+    <section class="sec" id="services">
+        <h3>What <span>We</span> Made?</h3>
+        <div class="service-content">
+            <div class="service-box">
+                <div class="img-box">
+                    <img src="assets/images/img2.jpg" alt="">
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem ex ullam nostrum explicabo
+                    dolore? Sunt culpa consequatur ipsa assumenda, enim molestiae alias reiciendis quibusdam ab facere
+                    sit
+                    aut adipisci.</p>
+            </div>
+            <div class="service-box">
+                <div class="img-box">
+                    <img src="assets/images/img3.jpg" alt="">
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem ex ullam nostrum explicabo
+                    dolore? Sunt culpa consequatur ipsa assumenda, enim molestiae alias reiciendis quibusdam ab facere
+                    sit
+                    aut adipisci.</p>
+            </div>
+            <div class="service-box">
+                <div class="img-box">
+                    <img src="assets/images/img4.jpg" alt="">
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem ex ullam nostrum explicabo
+                    dolore? Sunt culpa consequatur ipsa assumenda, enim molestiae alias reiciendis quibusdam ab facere
+                    sit
+                    aut adipisci.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <section class="sec" id="team">
+        <h3>Meet Our <span>Experts</span></h3>
+        <div class="service-content">
+            <div class="team-box">
+                <img src="assets/images/man1.jpg" alt="">
+                <h4>John Deo <br><span>Web Designer</span></h4>
+            </div>
+            <div class="team-box">
+                <img src="assets/images/man2.jpg" alt="">
+                <h4>John Deo <br><span>Web Designer</span></h4>
+            </div>
+            <div class="team-box">
+                <img src="assets/images/man3.jpg" alt="">
+                <h4>John Deo <br><span>Web Designer</span></h4>
+            </div>
+            <div class="team-box">
+                <img src="assets/images/man4.jpg" alt="">
+                <h4>John Deo <br><span>Web Designer</span></h4>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="sec" id="contact">
+        <h3>Send Us A <span>Message</span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo.</p>
+        <form action="">
+            <div>
+                <input type="text" name="name" class="contact-text" placeholder="Full Name">
+                <input type="email" name="name" class="contact-text" placeholder="Email Address">
+            </div>
+            <textarea name="" id="" class="contact-textarea" placeholder="Message"></textarea>
+            <input type="submit" value="Send" class="contact-submit">
+        </form>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+        <p>Copyright @ 2022 | <span>Mohid Faizy</span></p>
+    </section>
+    <script>
+        document.querySelector("#toggle").addEventListener("click",headertoggle);
+        window.addEventListener("scroll",headerscroll);
+        function headertoggle(){
+            document.querySelector("#menu").classList.toggle("toggle");
+            document.querySelector("header").classList.add("sticky");
+        }
+        function headerscroll() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        }
+
+        const loaderCon = document.querySelector(".loader__con");
+        window.addEventListener('load',()=>{
+            loaderCon.style.display = "none"
+        });
+    </script>
+</body>
+
+</html>

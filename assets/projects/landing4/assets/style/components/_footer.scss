@@ -1,0 +1,45 @@
+// Footer
+.footer{
+    padding: 2rem 0 6rem;
+    background: var(--first-color);
+    &__title,
+    &__link{
+        color: var(--body-color);
+    }
+    &__social{
+        &_link{
+            color: var(--body-color);
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    &__list{
+        display: flex;
+        column-gap: .75rem;
+        justify-content: center;
+        margin-bottom: .75rem;
+    }
+    &__social{
+        display: flex;
+        column-gap: .75rem;
+        justify-content: center;
+        margin-bottom: .75rem;
+        &_links{
+            background: var(--body-color);
+            color: var(--text-color);
+            display: inline-flex;
+            padding: .4rem;
+            transition: .4s;
+            border-radius: .2rem;
+            &:hover{
+                color: var(--first-color);
+            }
+        }
+    }
+    &__copy{
+        font-size: var(--small-font-size);
+        color: var(--body-color);
+        text-align: center;
+    }
+}

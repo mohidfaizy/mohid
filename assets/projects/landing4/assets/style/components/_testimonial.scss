@@ -1,0 +1,27 @@
+// Testimonial
+.testimonial{
+    &__card{
+        background: var(--container-color);
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: .4rem;
+    }
+    &__img{
+        width: 100px;
+        border-radius: 4rem;
+        object-fit: cover;
+        height: 100px;
+    }
+    &__name{
+        font-size: var(--normal-font-size);
+    }
+    &__description{
+        font-size: var(--small-font-size);
+    }
+    .swiper-pagination-bullet{
+        background-color: var(--text-color-light);
+    }
+    .swiper-pagination-bullet-active{
+        background-color: var(--first-color);
+    }
+}

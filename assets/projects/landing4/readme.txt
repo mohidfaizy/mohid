@@ -1,0 +1,1 @@
+You can customize all CSS files from assets/style and edit HTML from index.html file.

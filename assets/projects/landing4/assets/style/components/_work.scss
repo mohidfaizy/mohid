@@ -1,0 +1,39 @@
+.work{
+    &__container{
+        margin-top: 1rem;
+    }
+    &__filter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    &__item{
+        cursor: pointer;
+        color: var(--title-color);
+        padding: .2rem .7rem;
+        border-radius: .2rem;
+        transition: .4s;
+    }
+    &__card{
+        padding: 1rem;
+        background: var(--container-color);
+        border-radius: 1rem;
+    }
+    &__img{
+        border-radius: 1rem;
+    }
+    &__button{
+        font-size: var(--small-font-size);
+        width: max-content;
+        color: var(--first-color);
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        margin: 10px 0;
+    }
+    .active-work{
+        background: var(--first-color);
+        color: var(--body-color);
+    }
+}

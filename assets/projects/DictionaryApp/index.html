@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="heading">English Dictionary</h1>
+        <div class="search">
+            <i class='bx bx-search search_icon'></i>
+            <input type="text" class="search_input" id="search-box" placeholder="Search">
+            <i class='bx bx-x search_cancel' id="cancel-button"></i>
+        </div>
+        <div class="txt-info" id="txt-msg">
+            Type any work to see Meanings, Synonyms and Examples.
+        </div>
+        <div class="main" id="main">
+            
+            <div class="main_word">
+                <div class="main_word_content">
+                    <h2 id="eng-name"></h2>
+                    <p><span id="eng-pronoun"></span>
+                    <span id="eng-phonetic"></span></p>
+                    
+                </div>
+                <div class="main_word_audio">
+                    <i class='bx bx-volume-full' id="audio-btn"></i>
+                </div>
+            </div>
+            <div class="main_bottom"></div>
+            <div class="main_meaning main_section">
+                <h2>Meaning</h2>
+                <p id="eng-desc"></p>
+            </div>  
+            <div class="main_bottom"></div>
+            <div class="main_meaning main_section">
+                <h2>Example</h2>
+                <p id="eng-example"></p>
+            </div>
+            <div class="main_bottom"></div>
+            <div class="main_synonyms main_section">
+                <h2>Synonyms</h2>
+                <div id="eng-synonyms">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Js File -->
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>

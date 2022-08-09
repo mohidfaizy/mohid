@@ -1,0 +1,48 @@
+///////////////
+// Variables //
+///////////////
+
+
+:root{
+    // Colors //
+    --hue: 46;
+    --sat: 96%;
+    --main-color:  hsl(var(--hue), var(--sat), 63%);
+    --dark-color:  hsl(var(--hue), var(--sat), 55%);
+    --dark-white-color: hsl(0, 0%, 95%);
+    --background-light-color: hsl(0, 0%, 90%);
+    --background-dark-color:hsl(208, 41%, 8%);
+    // Font Colors
+    --title-light-color: hsl(0, 0%, 24%);
+    --text-light-color: hsl(0, 0%, 34%);
+    --title-dark-color: hsl(208, 12%, 95%);
+    --text-dark-color: hsl(208, 9%, 67%);
+    // Menu Colors
+    --light-menu-color: hsl(0, 0%, 84%);
+    --dark-menu-color: 	hsl(208, 25%, 12%);
+
+    // Font Sizes
+    --big-font: 2.875rem;
+    --icon-font: 2rem;
+    --title-font: 1.5rem;
+    --text-font: 1.375rem;
+    --small-font: 0.875rem;
+
+    // Font Weights
+    --light-weight: 400;
+    --medium: 500;
+
+    // Width
+    --container-width: 765px;
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        // Font Sizes
+        --big-font: 2rem;
+        --icon-font: 1.5rem;
+        --title-font: 1rem;
+        --text-font: 0.875rem;
+        --small-font: 0.75rem;
+    }
+}
